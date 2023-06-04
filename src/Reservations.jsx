@@ -1,7 +1,7 @@
 import { createClient } from "@supabase/supabase-js";
 import React from "react";
+import { supabaseUrl } from "./constants";
 
-const supabaseUrl = "https://xesldvbvamzutxnexmdj.supabase.co";
 const supabaseKey = process.env.REACT_APP_supaKey;
 const supabase = createClient(supabaseUrl, supabaseKey);
 
