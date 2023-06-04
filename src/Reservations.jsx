@@ -6,20 +6,45 @@ const supabaseKey = process.env.REACT_APP_supaKey;
 const supabase = createClient(supabaseUrl, supabaseKey);
 
 export const Reservations = () => {
-  const [response, setresponse] = React.useState({});
-  const [isAttending, setIsAttending] = React.useState(false);
+  const [response, setResponse] = React.useState({
+    attendanceType: "Ceremony and Reception",
+  });
+  const [isAttending, setIsAttending] = React.useState(null);
+  const [success, setSuccess] = React.useState(false);
 
   const onInputChange = (e) => {
-    setresponse({ ...response, [e.target.name]: e.target.value });
+    setResponse({ ...response, [e.target.name]: e.target.value });
   };
 
   const onAttendanceChange = (e) => {
+    setResponse({ ...response, numGuests: null });
     if (e.target.value === "Yes") {
       setIsAttending(true);
+    } else if (e.target.value === "None") {
+      setIsAttending(null);
     } else {
       setIsAttending(false);
     }
   };
+
+  const disabled = React.useMemo(() => {
+    if (isAttending) {
+      if (
+        !response.first ||
+        !response.last ||
+        isAttending === null ||
+        !response.numGuests
+      ) {
+        return true;
+      }
+      return false;
+    } else {
+      if (!response.first || !response.last || isAttending === null) {
+        return true;
+      }
+      return false;
+    }
+  }, [isAttending, response]);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -36,6 +61,8 @@ export const Reservations = () => {
     console.log(data);
     if (error) {
       console.log(error);
+    } else {
+      setSuccess(true);
     }
   };
 
@@ -51,20 +78,20 @@ export const Reservations = () => {
       >
         <h3>RSVP for our wedding!</h3>
         <div>
-          <label>First name </label>
+          <label>First name* </label>
           <input name="first" type="text" onChange={onInputChange} />
-          <label> Last name </label>
+          <label> Last name* </label>
           <input name="last" type="text" onChange={onInputChange} />
         </div>
 
         <div>
-          <label>Attending? </label>
+          <label>Attending?* </label>
           <select name="attending" onChange={onAttendanceChange}>
             <option>None</option>
             <option>Yes</option>
             <option>No</option>
           </select>
-          {isAttending && <label> Number of guests </label>}
+          {isAttending && <label> Number of guests* </label>}
           {isAttending && (
             <input name="numGuests" type="number" onChange={onInputChange} />
           )}
@@ -87,13 +114,16 @@ export const Reservations = () => {
           onChange={onInputChange}
         />
       </div>
+      <div style={{ marginLeft: "10px" }}>* field is required</div>
       <button
         style={{ marginLeft: "10px" }}
         type="submit"
         onClick={handleSubmit}
+        disabled={disabled}
       >
         Submit
       </button>
+      {success && " RSVP successful!"}
     </form>
   );
 };
