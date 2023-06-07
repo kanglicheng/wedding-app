@@ -1,4 +1,3 @@
-// @ts-nocheck
 import { createClient } from '@supabase/supabase-js';
 import React from 'react';
 import { supabaseUrl } from './constants';
@@ -10,6 +9,10 @@ const supabase = createClient(supabaseUrl, supabaseKey);
 export const Reservations = () => {
 	const [response, setResponse] = React.useState({
 		attendanceType: 'Ceremony and Reception',
+		numGuests: null,
+		first: "",
+		last: "",
+		comments: ""
 	});
 	const [isAttending, setIsAttending] = React.useState(null);
 	const [success, setSuccess] = React.useState(false);
