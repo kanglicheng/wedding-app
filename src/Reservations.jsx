@@ -58,8 +58,6 @@ export const Reservations = () => {
 
 		if(!response.first || !response.last || !response.email || isAttending === null){
 			setErr('Missing required field(s)!')
-		}
-		if(err){
 			return;
 		}
 
