@@ -10,6 +10,7 @@ import { Registry } from './Registry';
 import reportWebVitals from './reportWebVitals';
 import { Reservations } from './Reservations';
 import { Story } from './Story';
+import { sendToVercelAnalytics } from './vitals';
 
 const router = createBrowserRouter([
 	{
@@ -43,4 +44,4 @@ root.render(
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
 // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+reportWebVitals(sendToVercelAnalytics);
