@@ -8,7 +8,7 @@ export const Navigation = () => {
 	return (
 		<div style={{ margin: '15px' }}>
 			<h1>Welcome!</h1>
-			<h3>Kang-Li Cheng and Yue Tu's Wedding</h3>
+			<h3>Kang-Li Cheng and Yue Tu&apos;s Wedding</h3>
 			<nav>
 				<div
 					style={{
