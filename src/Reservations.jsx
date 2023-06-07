@@ -12,10 +12,12 @@ export const Reservations = () => {
 		numGuests: null,
 		first: "",
 		last: "",
-		comments: ""
+		comments: "",
+		email: ""
 	});
 	const [isAttending, setIsAttending] = React.useState(null);
 	const [success, setSuccess] = React.useState(false);
+	const [err, setErr] = React.useState(null);
 
 	const onInputChange = (e) => {
 		setResponse({ ...response, [e.target.name]: e.target.value });
@@ -53,6 +55,14 @@ export const Reservations = () => {
 
 	const handleSubmit = async (e) => {
 		e.preventDefault();
+
+		if(!response.first || !response.last || !response.email || isAttending === null){
+			setErr('Missing required field(s)!')
+		}
+		if(err){
+			return;
+		}
+
 		const { data, error } = await supabase.from('Reservations').insert([
 			{
 				first_name: response.first,
@@ -61,6 +71,7 @@ export const Reservations = () => {
 				attending: isAttending,
 				attendance_type: response.attendanceType,
 				comments: response.comments,
+				email: response.email,
 			},
 		]);
 		console.log(data);
@@ -111,6 +122,10 @@ export const Reservations = () => {
 						</select>
 					</div>
 				)}
+				<div>
+					<label>Email* (for event updates)</label>
+					<input name="email" style={{ width: '200px'}} type="email" onChange={onInputChange}/>
+				</div>
 
 				<label>Comments (anything you want us to know)</label>
 				<textarea
@@ -128,6 +143,7 @@ export const Reservations = () => {
 			>
         Submit
 			</button>
+			{err}
 			{success && ' RSVP successful!'}
 		</form>
 	);
