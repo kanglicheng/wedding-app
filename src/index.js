@@ -3,8 +3,13 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 
+import { ErrorPage } from './ErrorPage';
 import './index.css';
+import { Navigation } from './Navigation';
+import { Registry } from './Registry';
 import reportWebVitals from './reportWebVitals';
+import { Reservations } from './Reservations';
+import { Story } from './Story';
 
 const router = createBrowserRouter([
 	{

@@ -16,13 +16,13 @@ export const Navigation = () => {
 						justifyContent: 'space-between',
 					}}
 				>
-					<NavLink to="/home">Home</NavLink>
+					<NavLink to="/">Home</NavLink>
 					<Link to="/rsvp">RSVP</Link>
 					<Link to="/story">Our Story</Link>
 					<Link to="/gifts">Registry</Link>
 				</div>
 			</nav>
-			<div>{outlet || <Home />}</div>
+			<div>{outlet() || <Home/>}</div>
 		</div>
 	);
 };
