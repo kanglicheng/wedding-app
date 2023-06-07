@@ -6,15 +6,18 @@ import { supabaseUrl } from './constants';
 const supabaseKey = process.env.REACT_APP_supaKey;
 const supabase = createClient(supabaseUrl, supabaseKey);
 
+const initialResponse = {
+	attendanceType: 'Ceremony and Reception',
+	numGuests: 0,
+	first: "",
+	last: "",
+	comments: "",
+	email: "",
+	attending: "None"
+}
+
 export const Reservations = () => {
-	const [response, setResponse] = React.useState({
-		attendanceType: 'Ceremony and Reception',
-		numGuests: null,
-		first: "",
-		last: "",
-		comments: "",
-		email: ""
-	});
+	const [response, setResponse] = React.useState(initialResponse);
 	const [isAttending, setIsAttending] = React.useState(null);
 	const [success, setSuccess] = React.useState(false);
 	const [err, setErr] = React.useState(null);
@@ -24,7 +27,7 @@ export const Reservations = () => {
 	};
 
 	const onAttendanceChange = (e) => {
-		setResponse({ ...response, numGuests: null });
+		setResponse({...response, [e.target.name]: e.target.value, numGuests: 0})
 		if (e.target.value === 'Yes') {
 			setIsAttending(true);
 		} else if (e.target.value === 'None') {
@@ -37,10 +40,7 @@ export const Reservations = () => {
 	const disabled = React.useMemo(() => {
 		if (isAttending) {
 			if (
-				!response.first ||
-        !response.last ||
-        isAttending === null ||
-        !response.numGuests
+				!response.first || !response.last || isAttending === null || !response.numGuests || !response.email
 			) {
 				return true;
 			}
@@ -56,7 +56,7 @@ export const Reservations = () => {
 	const handleSubmit = async (e) => {
 		e.preventDefault();
 
-		if(!response.first || !response.last || !response.email || isAttending === null){
+		if(!response.first || !response.last|| isAttending === null){
 			setErr('Missing required field(s)!')
 			return;
 		}
@@ -77,8 +77,12 @@ export const Reservations = () => {
 			console.log(error);
 		} else {
 			setSuccess(true);
+			setErr(null);
+			setResponse(initialResponse)
 		}
 	};
+
+	console.log(response);
 
 	return (
 		<form>
@@ -93,9 +97,9 @@ export const Reservations = () => {
 				<h3>RSVP for our wedding!</h3>
 				<div>
 					<label>First name* </label>
-					<input name="first" type="text" onChange={onInputChange} />
+					<input name="first" type="text" value={response.first} onChange={onInputChange} />
 					<label> Last name* </label>
-					<input name="last" type="text" onChange={onInputChange} />
+					<input name="last" type="text" value={response.last} onChange={onInputChange} />
 				</div>
 
 				<div>
@@ -107,23 +111,23 @@ export const Reservations = () => {
 					</select>
 					{isAttending && <label> Number of guests* </label>}
 					{isAttending && (
-						<input name="numGuests" type="number" onChange={onInputChange} />
+						<input name="numGuests" type="number" onChange={onInputChange} value={response.numGuests}/>
 					)}
 				</div>
 				{isAttending && (
 					<div>
 						<span>Attendance Type </span>
-						<select name="attendanceType" onChange={onInputChange}>
+						<select name="attendanceType" onChange={onInputChange} value={response.attending}>
 							<option>Ceremony and Reception</option>
 							<option>Ceremony only</option>
 							<option>Reception only</option>
 						</select>
 					</div>
 				)}
-				<div>
+				{isAttending && <div>
 					<label>Email* (for event updates)</label>
-					<input name="email" style={{ width: '200px'}} type="email" onChange={onInputChange}/>
-				</div>
+					<input name="email" style={{ width: '200px'}} type="email" onChange={onInputChange} value={response.email}/>
+				</div>}
 
 				<label>Comments (anything you want us to know)</label>
 				<textarea
