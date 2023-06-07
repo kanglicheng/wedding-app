@@ -104,7 +104,7 @@ export const Reservations = () => {
 
 				<div>
 					<label>Attending?* </label>
-					<select name="attending" onChange={onAttendanceChange}>
+					<select name="attending" onChange={onAttendanceChange} value={response.attending}>
 						<option>None</option>
 						<option>Yes</option>
 						<option>No</option>
@@ -117,7 +117,7 @@ export const Reservations = () => {
 				{isAttending && (
 					<div>
 						<span>Attendance Type </span>
-						<select name="attendanceType" onChange={onInputChange} value={response.attending}>
+						<select name="attendanceType" onChange={onInputChange} value={response.attendanceType}>
 							<option>Ceremony and Reception</option>
 							<option>Ceremony only</option>
 							<option>Reception only</option>
