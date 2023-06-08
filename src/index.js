@@ -7,6 +7,7 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import { ErrorPage } from './ErrorPage';
 import './index.css';
 import { Navigation } from './Navigation';
+import { Pictures } from './Pictures';
 import { Registry } from './Registry';
 import reportWebVitals from './reportWebVitals';
 import { Reservations } from './Reservations';
@@ -31,6 +32,10 @@ const router = createBrowserRouter([
 				path: '/gifts',
 				element: <Registry />,
 			},
+			{
+				path: '/eventpics',
+				element: <Pictures/>
+			}
 		],
 	},
 ]);

@@ -18,9 +18,10 @@ export const Navigation = () => {
 					}}
 				>
 					<NavLink to="/">Home</NavLink>
-					<Link to="/rsvp">RSVP</Link>
 					<Link to="/story">Our Story</Link>
+					<Link to="/rsvp">RSVP !</Link>
 					<Link to="/gifts">Registry</Link>
+					<Link to="/eventpics">Event Pictures</Link>
 				</div>
 			</nav>
 			<div>{outlet() || <Home/>}</div>
