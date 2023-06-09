@@ -35,6 +35,10 @@ export const Home = () => {
 							<b>Address</b> <ClipboardCopy exitDelay={1800} style={{width: "400px", backgroundColor:"lightgoldenrodyellow"}} position={"top-start"} isReadOnly>447 NH Route 4A, Enfield, New Hampshire 03748 </ClipboardCopy>
 						</p>
 					</section>
+					<figure>
+						<img src={"https://xesldvbvamzutxnexmdj.supabase.co/storage/v1/object/public/photos/shaker.jpeg"}/>
+						<figcaption>Shaker Museum, photo taken May 2023</figcaption>
+					</figure>
 			</div>
 
 			
