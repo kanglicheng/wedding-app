@@ -201,7 +201,7 @@ const items = [
   ]
 export const Story = () => {
 	return (
-		<>
+		<div style={{display:"flex", flexDirection: "column", alignItems: "center"}}>
 			<h2>Our Story in Pictures</h2>
 			<div style={{ maxWidth: '850px' }}>
 			<Chrono 
@@ -213,6 +213,6 @@ export const Story = () => {
 			<h2>More Pictures!</h2>
 			<div style={{display:"grid", gridTemplateColumns: "repeat(3, 1fr)"}}>
 			</div>
-		</>
+		</div>
 	);
 };

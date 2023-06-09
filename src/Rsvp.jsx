@@ -83,7 +83,7 @@ export const Reservations = () => {
 	};
 
 	return (
-		<>
+		<div style={{display:"flex", flexDirection: "column", alignItems: "center"}}>
 			<h2>RSVP for our wedding!</h2>
 			<p>We would love for you to join us. Please fill out the form below so we know how many guests to expect!</p>
 			<form>
@@ -155,7 +155,7 @@ export const Reservations = () => {
 		</form>
 		
 		
-		</>
+		</div>
 
 	);
 };

@@ -24,21 +24,37 @@ code {
     monospace;
 }
 
-img {
+.image {
   border-radius: 8px;
   max-width: 300px;
   min-height: 270px;
 }
 
+.headerImage {
+  width: 300px;
+  height: 200px;
+}
+
+.pf-c-tooltip__content{
+  background-color: lightgreen !important;
+  border: 1px solid black;
+}
+
 .active {
-  background: hsl(0, 5%, 89%);
+  background: white;
   color: #10b981;
-  font-size: 18px;
+  font-size: 17px;
+  @media screen and (max-width: 750px) {
+    font-size: 16px;
+  }
 }
 
 .inactive {
   color: royalblue;
-  font-size: 18px;
+  font-size: 17px;
+  @media screen and (max-width: 750px) {
+    font-size: 16px;
+  }
 }
 
 nav {
@@ -55,17 +71,17 @@ p {
     margin: auto;
     row-gap: 12px;
     display: grid;
-    grid-template-columns: repeat(2, 400px);
+    grid-template-columns: repeat(2, 370px);
 
-    @media screen and (max-width: 600px) {
-      grid-template-columns: repeat(2, 220px);
+    @media screen and (max-width: 750px) {
+      grid-template-columns: repeat(2, 175px);
     }
 }
 
 input {
   display: block;
   min-width: 210px;
-  @media screen and (max-width: 600px)  {
+  @media screen and (max-width: 750px)  {
     min-width: auto;
   }
 }

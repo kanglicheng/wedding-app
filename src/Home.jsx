@@ -35,14 +35,14 @@ export const Home = () => {
 						<p>
 							<b>Address</b> 
 							<div style={{display: "flex", justifyContent: "center"}}>
-							<ClipboardCopy exitDelay={2000} style={{width: "400px", backgroundColor:"lightgoldenrodyellow"}} position={"top-start"}isReadOnly>
+							<ClipboardCopy hoverTip={'Click to copy!'} exitDelay={2000} style={{width: "400px", backgroundColor:"lightgoldenrodyellow"}} position={"top-start"}isReadOnly>
 									447 NH Route 4A, Enfield, New Hampshire 03748 
-								</ClipboardCopy>
+							</ClipboardCopy>
 							</div>
 						</p>
 					</section>
 					<figure>
-						<img src={"https://xesldvbvamzutxnexmdj.supabase.co/storage/v1/object/public/photos/shaker.jpeg"}/>
+						<img className={"image"} src={"https://xesldvbvamzutxnexmdj.supabase.co/storage/v1/object/public/photos/shaker.jpeg"}/>
 						<figcaption>Shaker Museum, photo taken May 2023</figcaption>
 					</figure>
 			</div>
