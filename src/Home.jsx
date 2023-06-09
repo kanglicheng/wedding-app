@@ -6,12 +6,12 @@ import React from 'react';
 export const Home = () => {
 	// eslint-disable-next-line no-unused-vars
 	return (
-		<div style={{margin: "10px", display: "flex", flexDirection: "column", alignItems: "center"}}>
+		<div style={{margin: "auto", display: "flex", flexDirection: "column", alignItems: "center", padding: "5px"}}>
 			<p>
 				Thank you for visiting our wedding website. This page contains all the information about our wedding 
 				day. Please RSVP should you be interested in attending!
 			</p>
-			<div>
+			<div style={{margin: "auto"}}>
 				<h2>Event Information</h2>
 					<h3>Date and Time</h3>
 					<p><b>Sunday, October 15th, 2023</b></p>

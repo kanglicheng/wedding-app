@@ -10,7 +10,7 @@ import { Navigation } from './Navigation';
 import { Pictures } from './Pictures';
 import { Registry } from './Registry';
 import reportWebVitals from './reportWebVitals';
-import { Reservations } from './Reservations';
+import { Reservations } from './Rsvp';
 import { Story } from './Story';
 import { sendToVercelAnalytics } from './vitals';
 

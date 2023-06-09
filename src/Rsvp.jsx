@@ -89,12 +89,7 @@ export const Reservations = () => {
 			<form>
 				<h3>Your Attendance</h3>
 			<div
-				style={{
-					margin: '10px',
-					rowGap: '20px',
-					display: 'grid',
-					gridTemplateColumns: 'repeat(2, 220px)',
-				}}
+				className={"rsvp"}
 			>
 				<div>
 					<label>First name* </label>
@@ -106,12 +101,13 @@ export const Reservations = () => {
 				</div>
 
 				<div>
-					<label>Attending?* </label>
-					<select name="attending" onChange={onAttendanceChange} value={response.attending}>
-						<option>None</option>
-						<option>Yes</option>
-						<option>No</option>
-					</select>
+					<label>Attending?*
+						<select name="attending" onChange={onAttendanceChange} value={response.attending}>
+							<option>None</option>
+							<option>Yes</option>
+							<option>No</option>
+						</select>
+					</label>
 				</div>
 				<div>
 				{isAttending && <label> Number of guests* </label>}
@@ -131,15 +127,18 @@ export const Reservations = () => {
 				)}
 				{isAttending && <div>
 					<label>Email* (for event updates)</label>
-					<input name="email" style={{ minWidth: '150px'}} type="email" onChange={onInputChange} value={response.email}/>
+					<input name="email" type="email" onChange={onInputChange} value={response.email}/>
 				</div>}
 				<div>
-					<textarea
-						placeholder={"Comments (if there is anything else you want us to know)"}
-						name="comments"
-						style={{ minWidth: "250px", minHeight: '150px' }}
-						onChange={onInputChange}
-					/>
+					<label>
+						Comments
+						<textarea
+							placeholder={"Leave a message here if there's anything else you'd like use to know"}
+							name="comments"
+							style={{ minWidth: "250px", minHeight: '150px' }}
+							onChange={onInputChange}
+						/>
+					</label>
 				</div>
 			</div>
 			<div style={{ marginLeft: '10px' }}>*required</div>

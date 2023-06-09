@@ -16,7 +16,7 @@ code {
 img {
   border-radius: 8px;
   max-width: 300px;
-  height: auto;
+  min-height: 270px;
 }
 
 .active {
@@ -32,4 +32,31 @@ nav {
 p {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 15px;
+}
+
+.rsvp {
+    margin: auto;
+    row-gap: 12px;
+    display: grid;
+    grid-template-columns: repeat(2, 0.75fr);
+
+    @media screen and (max-width: 600px) {
+      grid-template-columns: repeat(2, 220px);
+    }
+}
+
+input {
+  display: block;
+  min-width: 210px;
+  @media screen and (max-width: 600px)  {
+    min-width: auto;
+  }
+}
+
+select {
+  display: block;
+}
+
+textarea {
+  display: block;
 }
