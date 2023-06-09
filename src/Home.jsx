@@ -6,15 +6,15 @@ import React from 'react';
 export const Home = () => {
 	// eslint-disable-next-line no-unused-vars
 	return (
-		<div>
+		<div style={{margin: "10px", display: "flex", flexDirection: "column", alignItems: "center"}}>
 			<p>
 				Thank you for visiting our wedding website. This page contains all the information about our wedding 
-				day.
+				day. Please RSVP should you be interested in attending!
 			</p>
-			<div style={{margin: "15px"}}>
-				<h3>Event Information</h3>
-					<h4>Date and Time</h4>
-					<p>October 15th, 2023</p>
+			<div>
+				<h2>Event Information</h2>
+					<h3>Date and Time</h3>
+					<p><b>Sunday, October 15th, 2023</b></p>
 					<p>
 					Ceremony starts at 3:30pm
 					</p>
@@ -32,7 +32,12 @@ export const Home = () => {
 							Reception: <a href={"https://shakermuseum.org/"}>Shaker Museum</a> in Enfield, NH
 						</p>
 						<p>
-							<b>Address</b> <ClipboardCopy exitDelay={1800} style={{width: "400px", backgroundColor:"lightgoldenrodyellow"}} position={"top-start"} isReadOnly>447 NH Route 4A, Enfield, New Hampshire 03748 </ClipboardCopy>
+							<b>Address</b> 
+							<div style={{display: "flex", justifyContent: "center"}}>
+							<ClipboardCopy exitDelay={2000} style={{width: "400px", backgroundColor:"lightgoldenrodyellow"}} position={"top-start"}isReadOnly>
+									447 NH Route 4A, Enfield, New Hampshire 03748 
+								</ClipboardCopy>
+							</div>
 						</p>
 					</section>
 					<figure>

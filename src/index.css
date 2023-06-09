@@ -20,6 +20,16 @@ img {
 }
 
 .active {
-  background: hsl(0, 4%, 82%);
+  background: hsl(0, 5%, 89%);
   color: #10b981;
+}
+
+nav {
+  border: 1px solid lightgray;
+  padding: 5px;
+}
+
+p {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 15px;
 }

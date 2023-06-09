@@ -82,22 +82,25 @@ export const Reservations = () => {
 		}
 	};
 
-	console.log(response);
-
 	return (
-		<form>
+		<>
+			<h2>RSVP for our wedding!</h2>
+			<p>We would love for you to join us. Please fill out the form below so we know how many guests to expect!</p>
+			<form>
+				<h3>Your Attendance</h3>
 			<div
 				style={{
-					margin: '15px',
+					margin: '10px',
 					rowGap: '20px',
 					display: 'grid',
-					gridTemplateColumns: 'repeat(1, 1fr)',
+					gridTemplateColumns: 'repeat(2, 220px)',
 				}}
 			>
-				<h3>RSVP for our wedding!</h3>
 				<div>
 					<label>First name* </label>
 					<input name="first" type="text" value={response.first} onChange={onInputChange} />
+				</div>
+				<div>
 					<label> Last name* </label>
 					<input name="last" type="text" value={response.last} onChange={onInputChange} />
 				</div>
@@ -109,7 +112,9 @@ export const Reservations = () => {
 						<option>Yes</option>
 						<option>No</option>
 					</select>
-					{isAttending && <label> Number of guests* </label>}
+				</div>
+				<div>
+				{isAttending && <label> Number of guests* </label>}
 					{isAttending && (
 						<input name="numGuests" type="number" onChange={onInputChange} value={response.numGuests}/>
 					)}
@@ -126,17 +131,18 @@ export const Reservations = () => {
 				)}
 				{isAttending && <div>
 					<label>Email* (for event updates)</label>
-					<input name="email" style={{ width: '200px'}} type="email" onChange={onInputChange} value={response.email}/>
+					<input name="email" style={{ minWidth: '150px'}} type="email" onChange={onInputChange} value={response.email}/>
 				</div>}
-
-				<label>Comments (anything you want us to know)</label>
-				<textarea
-					name="comments"
-					style={{ width: '250px', height: '100px' }}
-					onChange={onInputChange}
-				/>
+				<div>
+					<textarea
+						placeholder={"Comments (if there is anything else you want us to know)"}
+						name="comments"
+						style={{ minWidth: "250px", minHeight: '150px' }}
+						onChange={onInputChange}
+					/>
+				</div>
 			</div>
-			<div style={{ marginLeft: '10px' }}>* field is required</div>
+			<div style={{ marginLeft: '10px' }}>*required</div>
 			<button
 				style={{ marginLeft: '10px' }}
 				type="submit"
@@ -148,5 +154,9 @@ export const Reservations = () => {
 			{err}
 			{success && ' RSVP successful!'}
 		</form>
+		
+		
+		</>
+
 	);
 };
