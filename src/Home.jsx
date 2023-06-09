@@ -7,6 +7,7 @@ export const Home = () => {
 	// eslint-disable-next-line no-unused-vars
 	return (
 		<div style={{margin: "auto", display: "flex", flexDirection: "column", alignItems: "center", padding: "5px"}}>
+			<h2>Welcome!</h2>
 			<p>
 				Thank you for visiting our wedding website. This page contains all the information about our wedding 
 				day. Please RSVP should you be interested in attending!
