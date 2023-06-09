@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { Link, NavLink, useOutlet } from 'react-router-dom';
+import { NavLink, useOutlet } from 'react-router-dom';
 import { Home } from './Home';
 
 export const Navigation = () => {
@@ -12,16 +12,21 @@ export const Navigation = () => {
 			<nav>
 				<div
 					style={{
-						maxWidth: '500px',
+						maxWidth: '650px',
 						display: 'flex',
 						justifyContent: 'space-between',
 					}}
 				>
-					<NavLink to="/">Home</NavLink>
-					<Link to="/story">Our Story</Link>
-					<Link to="/rsvp">RSVP !</Link>
-					<Link to="/gifts">Registry</Link>
-					<Link to="/eventpics">Event Pictures</Link>
+					<NavLink className={({ isActive, isPending }) =>
+					isPending ? "pending" : isActive ? "active" : ""} to="/">Home</NavLink>
+					<NavLink className={({ isActive, isPending }) =>
+					isPending ? "pending" : isActive ? "active" : ""} to="/story">Our Story</NavLink>
+					<NavLink className={({ isActive, isPending }) =>
+					isPending ? "pending" : isActive ? "active" : ""} to="/rsvp">RSVP !</NavLink>
+					<NavLink className={({ isActive, isPending }) =>
+					isPending ? "pending" : isActive ? "active" : ""} to="/gifts">Registry</NavLink>
+					<NavLink className={({ isActive, isPending }) =>
+					isPending ? "pending" : isActive ? "active" : ""} to="/eventpics">Event Pictures</NavLink>
 				</div>
 			</nav>
 			<div>{outlet() || <Home/>}</div>

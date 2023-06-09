@@ -205,7 +205,8 @@ export const Story = () => {
 			<h2>Our Story in Pictures</h2>
 			<div style={{ maxWidth: '850px' }}>
 			<Chrono 
-
+			fontSizes={{cardTitle: "18px", cardSubtitle: "14px"}}
+			hideControls={true}
 			// @ts-ignore
 			items={items} mode="VERTICAL_ALTERNATING" />
 			</div>

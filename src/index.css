@@ -18,3 +18,8 @@ img {
   max-width: 300px;
   height: auto;
 }
+
+.active {
+  background: hsl(0, 4%, 82%);
+  color: #10b981;
+}
