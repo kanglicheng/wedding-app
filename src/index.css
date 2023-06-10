@@ -53,19 +53,28 @@ code {
 .active {
   background: white;
   color: #10b981;
-  font-size: 17px;
+  font-size: 18px;
   @media screen and (max-width: 750px) {
-    font-size: 16px;
+    font-size: 11px;
   }
 }
 
 .inactive {
   color: royalblue;
-  font-size: 17px;
+  font-size: 18px;
   @media screen and (max-width: 750px) {
-    font-size: 16px;
+    font-size: 11px;
   }
 }
+
+.title {text-decoration: none;
+   color:#4e4d52; font-weight: 400; 
+   letter-spacing: 8px;
+    font-size: 48px; font-family:Nanum Myeongjo;
+    @media screen and (max-width: 750px) {
+      font-size: 24px;
+    }
+  }
 
 nav {
   border: 1px solid lightgray;
