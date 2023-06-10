@@ -32,14 +32,13 @@ export const Home = () => {
 						<p>
 							Reception: <a href={"https://shakermuseum.org/"}>Shaker Museum</a> in Enfield, NH
 						</p>
-						<p>
 							<b>Address</b> 
 							<div style={{display: "flex", justifyContent: "center"}}>
 							<ClipboardCopy hoverTip={'Click to copy!'} exitDelay={2000} style={{width: "400px", backgroundColor:"lightgoldenrodyellow"}} position={"top-start"}isReadOnly>
 									447 NH Route 4A, Enfield, New Hampshire 03748 
 							</ClipboardCopy>
 							</div>
-						</p>
+	
 					</section>
 					<figure>
 						<img className={"image"} src={"https://xesldvbvamzutxnexmdj.supabase.co/storage/v1/object/public/photos/shaker.jpeg"}/>
