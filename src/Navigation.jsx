@@ -33,7 +33,7 @@ export const Navigation = () => {
 					isPending ? "pending" : isActive ? "active" : "inactive"}  to="/eventpics">EVENT PICTURES</NavLink>
 				</div>
 			</nav>
-			<div>{outlet() || <Home/>}</div>
+			<>{outlet() || <Home/>}</>
 		</div>
 	);
 };
