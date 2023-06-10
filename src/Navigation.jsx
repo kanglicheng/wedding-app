@@ -16,8 +16,8 @@ export const Navigation = () => {
 				<div
 					style={{
 						display: 'flex',
-						justifyContent: 'center safe',
-						alignItems: 'center',
+						justifyContent: 'center',
+						alignItems: 'center safe',
 						columnGap: '12px'
 					}}
 				>
