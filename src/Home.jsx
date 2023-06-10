@@ -9,7 +9,7 @@ export const Home = () => {
 		<div style={{margin: "auto", display: "flex", flexDirection: "column", alignItems: "center", padding: "5px"}}>
 			<h2>Welcome!</h2>
 			<p>
-				Thank you for visiting our wedding website. This page contains all the information about our wedding 
+				Thank you for stopping by. We are getting married this year! This page contains all the information about our wedding 
 				day. Please <a href={'/rsvp'}>RSVP</a> should you be interested in attending!
 			</p>
 			<div style={{margin: "auto"}}>
