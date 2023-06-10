@@ -10,7 +10,7 @@ export const Home = () => {
 			<h2>Welcome!</h2>
 			<p>
 				Thank you for visiting our wedding website. This page contains all the information about our wedding 
-				day. Please RSVP should you be interested in attending!
+				day. Please <a href={'/rsvp'}>RSVP</a> should you be interested in attending!
 			</p>
 			<div style={{margin: "auto"}}>
 				<h2>Event Information</h2>

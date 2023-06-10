@@ -104,7 +104,7 @@ const items = [
 		"media": {
 			"name": "Santa Cruz",
 			"source": {
-			"url": "https://xesldvbvamzutxnexmdj.supabase.co/storage/v1/object/public/photos/5B3C182E-3FBE-4457-8058-0C4E56FAFEAA.JPG"
+			"url": "https://xesldvbvamzutxnexmdj.supabase.co/storage/v1/object/public/photos/santacruz-yellow.png"
 			},
 			"type": "IMAGE"
 		},
@@ -116,7 +116,7 @@ const items = [
 		"media": {
 			"name": "bday2022",
 			"source": {
-			"url": "https://xesldvbvamzutxnexmdj.supabase.co/storage/v1/object/public/photos/yue_birthday_2022.jpeg"
+			"url": "https://xesldvbvamzutxnexmdj.supabase.co/storage/v1/object/public/photos/yue-bday22.png"
 			},
 			"type": "IMAGE"
 		},
@@ -205,7 +205,7 @@ export const Story = () => {
 			<h2>Our Story in Pictures</h2>
 			<div style={{ maxWidth: '850px' }}>
 			<Chrono 
-			fontSizes={{cardTitle: "18px", cardSubtitle: "14px"}}
+			fontSizes={{cardTitle: "18px", cardSubtitle: "15px", cardText:"16px"}}
 			hideControls={true}
 			// @ts-ignore
 			items={items} mode="VERTICAL_ALTERNATING" />
