@@ -53,21 +53,17 @@ code {
 .active {
   background: white;
   color: #10b981;
-  font-size: 20px;
-  font-weight: 600;
   @media screen and (max-width: 750px) {
     font-size: 11px;
   }
 }
 
 .inactive {
-  color: royalblue;
-  font-size: 20px;
-  font-weight: 600;
   @media screen and (max-width: 750px) {
     font-size: 11px;
   }
 }
+
 
 .title {text-decoration: none;
    color:#4e4d52; font-weight: 400; 
