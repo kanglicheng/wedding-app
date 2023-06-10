@@ -4,7 +4,7 @@ import { supabaseUrl } from './constants';
 
 // eslint-disable-next-line no-undef
 const supabaseKey = process.env.REACT_APP_supaKey;
-const supabase = createClient(supabaseUrl, supabaseKey);
+export const supabase = createClient(supabaseUrl, supabaseKey);
 
 const initialResponse = {
 	attendanceType: 'Ceremony and Reception',

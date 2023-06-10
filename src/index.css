@@ -37,7 +37,10 @@ code {
 
 .headerImage {
   width: 100%;
-  height: 150px;
+  height: 350px;
+  @media screen and (max-width: 750px) {
+    height: 150px
+  }
 }
 
 .CardImage-hqCpvm {
