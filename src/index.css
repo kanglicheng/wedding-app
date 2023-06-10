@@ -56,12 +56,14 @@ code {
 .active {
   background: white;
   color: #10b981;
+  font-size: 20px;
   @media screen and (max-width: 750px) {
     font-size: 11px;
   }
 }
 
 .inactive {
+  font-size: 20px;
   @media screen and (max-width: 750px) {
     font-size: 11px;
   }
