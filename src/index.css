@@ -75,6 +75,7 @@ nav {
     margin: auto;
     row-gap: 12px;
     display: grid;
+    column-gap: 3px;
     grid-template-columns: repeat(2, minmax(170px, 1fr));
     padding: 5px;
 }
