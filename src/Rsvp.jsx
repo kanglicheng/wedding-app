@@ -93,16 +93,16 @@ export const Reservations = () => {
 			>
 				<div>
 					<label>First name* </label>
-					<input name="first" type="text" value={response.first} onChange={onInputChange} />
+					<input className={"input"} name="first" type="text" value={response.first} onChange={onInputChange} />
 				</div>
 				<div>
 					<label> Last name* </label>
-					<input name="last" type="text" value={response.last} onChange={onInputChange} />
+					<input className={"input"}  name="last" type="text" value={response.last} onChange={onInputChange} />
 				</div>
 
 				<div>
 					<label>Attending?*
-						<select name="attending" onChange={onAttendanceChange} value={response.attending}>
+						<select className={"input"}  name="attending" onChange={onAttendanceChange} value={response.attending}>
 							<option>None</option>
 							<option>Yes</option>
 							<option>No</option>
@@ -112,13 +112,13 @@ export const Reservations = () => {
 				<div>
 				{isAttending && <label> Number of guests* </label>}
 					{isAttending && (
-						<input name="numGuests" type="number" onChange={onInputChange} value={response.numGuests}/>
+						<input className={"input"}  name="numGuests" type="number" onChange={onInputChange} value={response.numGuests}/>
 					)}
 				</div>
 				{isAttending && (
 					<div>
 						<span>Attendance Type </span>
-						<select name="attendanceType" onChange={onInputChange} value={response.attendanceType}>
+						<select className={"input"}  name="attendanceType" onChange={onInputChange} value={response.attendanceType}>
 							<option>Ceremony and Reception</option>
 							<option>Ceremony only</option>
 							<option>Reception only</option>
@@ -127,7 +127,7 @@ export const Reservations = () => {
 				)}
 				{isAttending && <div>
 					<label>Email* (for event updates)</label>
-					<input name="email" type="email" onChange={onInputChange} value={response.email}/>
+					<input className={"input"}  name="email" type="email" onChange={onInputChange} value={response.email}/>
 				</div>}
 				<div>
 					<label>
