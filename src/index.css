@@ -89,11 +89,8 @@ nav {
     margin: auto;
     row-gap: 12px;
     display: grid;
-    grid-template-columns: repeat(2, 370px);
-
-    @media screen and (max-width: 750px) {
-      grid-template-columns: repeat(2, 175px);
-    }
+    grid-template-columns: repeat(2, minmax(170px, 1fr));
+    padding: 5px;
 }
 
 input {
