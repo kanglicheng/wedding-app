@@ -95,14 +95,12 @@ nav {
 
 input {
   display: block;
-  min-width: 210px;
-  @media screen and (max-width: 750px)  {
-    min-width: auto;
-  }
+  max-width: fit-content;
 }
 
 select {
   display: block;
+  max-width: fit-content;
 }
 
 textarea {
