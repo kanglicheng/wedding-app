@@ -79,8 +79,13 @@ nav {
     padding: 5px;
 }
 
+input {
+  font-family: "Nanum Myeongjo";
+}
+
 .input {
   display: block;
+  font-size: clamp(1rem, 1.3vw, 2rem);
   max-width: fit-content;
 }
 
