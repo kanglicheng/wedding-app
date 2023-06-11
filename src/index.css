@@ -86,7 +86,7 @@ input {
 
 .input {
   display: block;
-  font-size: clamp(1rem, 1.3vw, 2rem);
+  font-size: clamp(1rem, 1.2vw, 2rem);
   max-width: fit-content;
 }
 
@@ -94,4 +94,5 @@ input {
 
 textarea {
   display: block;
+  font-family: "Nanum Myeongjo";
 }
