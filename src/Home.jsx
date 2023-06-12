@@ -41,7 +41,7 @@ export const Home = () => {
 	
 					</section>
 					<figure>
-						<img className={"image"} src={"https://xesldvbvamzutxnexmdj.supabase.co/storage/v1/object/public/photos/shaker.jpeg"}/>
+						<img className={"image"} src={"https://gyesgoqhxmpfhaqfvklq.supabase.co/storage/v1/object/public/property-photos/shaker.jpeg"}/>
 						<figcaption>Shaker Museum, photo taken May 2023</figcaption>
 					</figure>
 			</div>

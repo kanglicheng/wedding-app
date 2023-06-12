@@ -32,7 +32,7 @@ const items = [
 		"media": {
 			"name": "Manhattan, NY",
 			"source": {
-			"url": "https://xesldvbvamzutxnexmdj.supabase.co/storage/v1/object/public/photos/wang_may_2018.jpeg"
+			"url": "https://gyesgoqhxmpfhaqfvklq.supabase.co/storage/v1/object/public/property-photos/wang_may_2018.jpeg?t=2023-06-12T03%3A13%3A35.248Z"
 			},
 			"type": "IMAGE"
 		},
@@ -44,7 +44,7 @@ const items = [
 		"media": {
 			"name": "Broadway",
 			"source": {
-			"url": "https://xesldvbvamzutxnexmdj.supabase.co/storage/v1/object/public/photos/IMG_4577.jpeg"
+			"url": "https://gyesgoqhxmpfhaqfvklq.supabase.co/storage/v1/object/public/property-photos/IMG_4577.jpeg"
 			},
 			"type": "IMAGE"
 		},
@@ -68,7 +68,7 @@ const items = [
 		"media": {
 			"name": "Potato Chip",
 			"source": {
-			"url": "https://xesldvbvamzutxnexmdj.supabase.co/storage/v1/object/public/photos/potato_chip_july_2021.jpeg"
+			"url": "https://gyesgoqhxmpfhaqfvklq.supabase.co/storage/v1/object/public/property-photos/potato_chip_july_2021.jpeg"
 			},
 			"type": "IMAGE"
 		},
@@ -104,7 +104,7 @@ const items = [
 		"media": {
 			"name": "Santa Cruz",
 			"source": {
-			"url": "https://xesldvbvamzutxnexmdj.supabase.co/storage/v1/object/public/photos/santacruz-yellow.png"
+			"url": "https://gyesgoqhxmpfhaqfvklq.supabase.co/storage/v1/object/public/property-photos/santacruz-yellow.png"
 			},
 			"type": "IMAGE"
 		},

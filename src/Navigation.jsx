@@ -9,7 +9,7 @@ export const Navigation = () => {
 	return (
 		<div style={{ margin: '15px' }}>
 			<div style={{ textAlign:"center", color:"greenyellow"}}>
-				<img className={'headerImage'} alt={"header"} src={"https://xesldvbvamzutxnexmdj.supabase.co/storage/v1/object/public/photos/frame2.png?t=2023-06-11T16%3A04%3A55.045Z"}/>
+				<img className={'headerImage'} alt={"header"} src={"https://gyesgoqhxmpfhaqfvklq.supabase.co/storage/v1/object/public/property-photos/frame2%20(1).png?t=2023-06-12T03%3A15%3A40.412Z"}/>
 				<h1><a className={'title'} href={"/"}>KANG-LI CHENG & YUE TU</a></h1>
 			</div>
 			<nav>
