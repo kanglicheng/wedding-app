@@ -20,7 +20,7 @@ const items = [
 		"media": {
 			"name": "Columbia University, Mailman",
 			"source": {
-			"url": "https://gyesgoqhxmpfhaqfvklq.supabase.co/storage/v1/object/public/property-photos/columbia_sept_2016.jpeg"
+			"url": "https://gyesgoqhxmpfhaqfvklq.supabase.co/storage/v1/object/public/property-photos/personal/columbia_sept_2016.jpeg?t=2023-06-12T03%3A45%3A30.565Z"
 			},
 			"type": "IMAGE"
 		},
@@ -44,7 +44,7 @@ const items = [
 		"media": {
 			"name": "Broadway",
 			"source": {
-			"url": "https://gyesgoqhxmpfhaqfvklq.supabase.co/storage/v1/object/public/property-photos/IMG_4577.jpeg"
+			"url": "https://gyesgoqhxmpfhaqfvklq.supabase.co/storage/v1/object/public/property-photos/personal/IMG_4577.jpeg"
 			},
 			"type": "IMAGE"
 		},
@@ -68,7 +68,7 @@ const items = [
 		"media": {
 			"name": "Potato Chip",
 			"source": {
-			"url": "https://gyesgoqhxmpfhaqfvklq.supabase.co/storage/v1/object/public/property-photos/potato_chip_july_2021.jpeg"
+			"url": "https://gyesgoqhxmpfhaqfvklq.supabase.co/storage/v1/object/public/property-photos/personal/potato_chip_july_2021.jpeg?t=2023-06-12T03%3A46%3A57.521Z"
 			},
 			"type": "IMAGE"
 		},
@@ -104,7 +104,7 @@ const items = [
 		"media": {
 			"name": "Santa Cruz",
 			"source": {
-			"url": "https://gyesgoqhxmpfhaqfvklq.supabase.co/storage/v1/object/public/property-photos/santacruz-yellow.png"
+			"url": "https://gyesgoqhxmpfhaqfvklq.supabase.co/storage/v1/object/public/property-photos/personal/santacruz-yellow.png?t=2023-06-12T03%3A46%3A06.856Z"
 			},
 			"type": "IMAGE"
 		},
