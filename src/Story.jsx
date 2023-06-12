@@ -20,7 +20,7 @@ const items = [
 		"media": {
 			"name": "Columbia University, Mailman",
 			"source": {
-			"url": "https://xesldvbvamzutxnexmdj.supabase.co/storage/v1/object/public/photos/columbia_sept_2016.jpeg"
+			"url": "https://gyesgoqhxmpfhaqfvklq.supabase.co/storage/v1/object/public/property-photos/columbia_sept_2016.jpeg"
 			},
 			"type": "IMAGE"
 		},
@@ -116,7 +116,7 @@ const items = [
 		"media": {
 			"name": "bday2022",
 			"source": {
-			"url": "https://xesldvbvamzutxnexmdj.supabase.co/storage/v1/object/public/photos/yue-bday22.png"
+			"url": "https://gyesgoqhxmpfhaqfvklq.supabase.co/storage/v1/object/public/property-photos/yue-bday22.png"
 			},
 			"type": "IMAGE"
 		},
