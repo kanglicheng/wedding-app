@@ -110,7 +110,7 @@ export const Reservations = () => {
 					</label>
 				</div>
 				<div>
-				{isAttending && <label> Number of guests* </label>}
+				{isAttending && <label> Number of guests* (including self) </label>}
 					{isAttending && (
 						<input className={"input"}  name="numGuests" type="number" onChange={onInputChange} value={response.numGuests}/>
 					)}

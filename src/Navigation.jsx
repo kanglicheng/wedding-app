@@ -7,7 +7,7 @@ import { Home } from './Home';
 export const Navigation = () => {
 	const outlet = useOutlet;
 	return (
-		<div style={{ margin: '15px' }}>
+		<div style={{ margin: '8px' }}>
 			<div style={{ textAlign:"center", color:"greenyellow"}}>
 				<img className={'headerImage'} alt={"header"} src={"https://gyesgoqhxmpfhaqfvklq.supabase.co/storage/v1/object/public/property-photos/personal/frame2%20(1).png?t=2023-06-12T03%3A47%3A49.656Z"}/>
 				<h1><a className={'title'} href={"/"}>KANG-LI CHENG & YUE TU</a></h1>
@@ -18,7 +18,7 @@ export const Navigation = () => {
 						display: 'flex',
 						justifyContent: 'center',
 						alignItems: 'center safe',
-						columnGap: '12px'
+						columnGap: '10px'
 					}}
 				>
 					<NavLink className={({ isActive, isPending }) =>

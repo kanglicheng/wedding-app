@@ -51,11 +51,11 @@ code {
 .active {
   background: white;
   color: #10b981;
-  font-size: clamp(11px, 1.5vw, 18px);
+  font-size: clamp(10px, 1.5vw, 18px);
 }
 
 .inactive {
-  font-size: clamp(11px, 1.5vw, 18px);
+  font-size: clamp(10px, 1.5vw, 18px);
 }
 
 
@@ -73,11 +73,11 @@ nav {
 
 .rsvp {
     margin: auto;
-    row-gap: 12px;
+    row-gap: 8px;
     display: grid;
-    column-gap: 3px;
-    grid-template-columns: repeat(2, minmax(170px, 1fr));
-    padding: 5px;
+    column-gap: 5px;
+    grid-template-columns: repeat(2, minmax(140px, 1fr));
+    padding: 3px;
 }
 
 input {
