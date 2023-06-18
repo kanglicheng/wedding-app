@@ -91,8 +91,8 @@ input {
 
 .input {
   display: block;
-  font-size: clamp(1rem, 1.2vw, 2rem);
-  width: 10em;
+  font-size: clamp(0.75em, 1.1vw, 3em);
+  width: clamp(10rem, 14vw, 22rem);
 }
 
 textarea {
