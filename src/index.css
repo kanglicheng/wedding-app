@@ -30,7 +30,12 @@ code {
 .image {
   border-radius: 8px;
   max-width: 300px;
-  min-height: 270px;
+  max-height: 280px;
+}
+
+.thumb {
+  width: 18vw;
+  height: 16vh;
 }
 
 .headerImage {
@@ -89,8 +94,6 @@ input {
   font-size: clamp(1rem, 1.2vw, 2rem);
   max-width: fit-content;
 }
-
-
 
 textarea {
   display: block;
