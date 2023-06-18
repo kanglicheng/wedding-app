@@ -20,7 +20,7 @@ export const Home = () => {
 					<h3>Date and Time</h3>
 					<p><b>Sunday, October 15th, 2023</b></p>
 					<p>
-					Ceremony starts at 3:30pm
+					Ceremony starts at 3:45pm
 					</p>
 					<p>
 					Reception after the ceremony at 5:00pm.
