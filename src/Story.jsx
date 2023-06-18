@@ -136,7 +136,7 @@ const items = [
 	}
 	,{
 		"title": "December 2022",
-		"cardTitle": "Another year gone by",
+		"cardTitle": "We got maiired! legally :)",
 		"media": {
 			"name": "married",
 			"source": {
