@@ -50,6 +50,7 @@ export const Registry = () => {
 						</figcaption>
 					</figure>
 				</div>
+				<div></div>
 				<div>
 					<h5>Methods of Remittance</h5>
 					<p>Zelle: tuyue831@gmail.com</p>
