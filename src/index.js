@@ -4,6 +4,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import { ErrorPage } from './ErrorPage';
+import { GuestList } from './GuestList';
 import './index.css';
 import { Navigation } from './Navigation';
 import { Pictures } from './Pictures';
@@ -37,6 +38,9 @@ const router = createBrowserRouter([
 			}
 		],
 	},
+	{path: '/coming',
+	element: <GuestList/>
+	}
 ]);
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
