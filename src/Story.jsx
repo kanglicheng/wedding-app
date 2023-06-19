@@ -6,7 +6,12 @@ const items = [
 		"title": "Oct 1992",
 		"cardTitle": "Kang-Li's first birthday",
 		"cardSubtitle": "Kang-Li was born in Pennsylvania",
-		"cardDetailedText": "The first child of Chi-Yang and Shue-Fan, he was a calm and quiet child."
+		"cardDetailedText": "The first child of Chi-Yang and Shue-Fan, he was a calm and quiet child.",
+		"media": {
+			"name": "Kang-Li and his grandmother",
+			"source":{"url": "https://xesldvbvamzutxnexmdj.supabase.co/storage/v1/object/public/photos/Kang-Li_and_Grandma.jpg"},
+			"type": "IMAGE"
+		}
 	},
 	{
 		"title": "Aug 1994",
