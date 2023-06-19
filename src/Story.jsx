@@ -3,19 +3,26 @@ import React from 'react';
 import { Chrono } from 'react-chrono';
 const items = [
 	{
-		"title": "October 1992",
+		"title": "Oct 1992",
 		"cardTitle": "Kang-Li's first birthday",
 		"cardSubtitle": "Kang-Li was born in Pennsylvania",
 		"cardDetailedText": "The first child of Chi-Yang and Shue-Fan, he was a calm and quiet child."
 	},
 	{
-		"title": "August 1994",
+		"title": "Aug 1994",
 		"cardTitle": "Yue's first birthday",
 		"cardSubtitle": "Yue Tu was born in Jiangxi and then grew up in Beijing",
-		"cardDetailedText": "The only child of the Tu family and described by adults as the 'cutest child ever'!"
+		"cardDetailedText": "The only child of the Tu family and described by adults as the 'cutest child ever'! Note, photo is from 1996.",
+		"media": {
+			"name": "Yue in 1996",
+			"source": {
+			"url": "https://xesldvbvamzutxnexmdj.supabase.co/storage/v1/object/public/photos/yue-96.jpeg"
+			},
+			"type": "IMAGE"
+		},
 	},
 	{
-		"title": "September 2016",
+		"title": "Sept 2016",
 		"cardTitle": "Kang-Li and Yue meet for the first time",
 		"media": {
 			"name": "Columbia University, Mailman",
@@ -39,7 +46,7 @@ const items = [
 		
 	},
 	{
-		"title": "September 2020",
+		"title": "Sept 2020",
 		"cardTitle": "Second runion!",
 		"media": {
 			"name": "Broadway",
@@ -51,7 +58,7 @@ const items = [
 		
 	},
 	{
-		"title": "October 2020",
+		"title": "Oct 2020",
 		"cardTitle": "First date at Santa Monica",
 		"media": {
 			"name": "Santa Monica",
@@ -75,7 +82,7 @@ const items = [
 		
 	}	
 	,{
-		"title": "December 2021",
+		"title": "Dec 2021",
 		"cardTitle": "Visit NY/NJ",
 		"media": {
 			"name": "NY/NJ",
@@ -87,7 +94,7 @@ const items = [
 		
 	}	
 	,{
-		"title": "January 2022",
+		"title": "Jan 2022",
 		"cardTitle": "First day in 2022",
 		"media": {
 			"name": "First day",
@@ -123,7 +130,7 @@ const items = [
 		
 	}
 	,{
-		"title": "October 2022",
+		"title": "Oct 2022",
 		"cardTitle": "First 5K race together on Kang-Li's 2022 birthday",
 		"media": {
 			"name": "klbday2022",
@@ -135,8 +142,8 @@ const items = [
 		
 	}
 	,{
-		"title": "December 2022",
-		"cardTitle": "We got maiired! legally :)",
+		"title": "Dec 2022",
+		"cardTitle": "We got married! legally :)",
 		"media": {
 			"name": "married",
 			"source": {
@@ -147,7 +154,7 @@ const items = [
 		
 	},
 	{
-		"title": "March 2023",
+		"title": "Mar 2023",
 		"cardTitle": "Road trip across US",
 		"media": {
 			"name": "roadtrip",
@@ -160,7 +167,7 @@ const items = [
 		
 	},
 	{
-		"title": "March 2023",
+		"title": "Mar 2023",
 		"cardTitle": "Visit Toast's birth place",
 		"media": {
 			"name": "toastbirth",
@@ -173,7 +180,7 @@ const items = [
 		
 	},
 	{
-		"title": "March 2023",
+		"title": "Mar 2023",
 		"cardTitle": "Visit Kang-Li's birth place",
 		"media": {
 			"name": "klbirth",
@@ -186,7 +193,7 @@ const items = [
 		
 	},
 	{
-		"title": "April 2023",
+		"title": "Apr 2023",
 		"cardTitle": "Visit Disney World for the first time",
 		"media": {
 			"name": "disney",
