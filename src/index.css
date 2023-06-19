@@ -85,6 +85,15 @@ nav {
     padding: 3px;
 }
 
+.rsvp-container {
+  display: grid;
+  grid-template-columns: repeat(3, 28vw);
+  margin: 12px;
+  @media screen and (max-width: 650px) {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
 input {
   font-family: "Nanum Myeongjo";
 }

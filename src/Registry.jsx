@@ -12,7 +12,7 @@ export const Registry = () => {
 				We of course welcome a gift of your own choosing too!
 				</p>
 			</div>
-			<div style={{display: "grid", gridTemplateColumns: "repeat(3, 28vw)", margin:"12px"}}>
+			<div className={"rsvp-container"}>
 				<div>
 					<h5>Treats for Toast</h5>
 					<figure>
