@@ -53,7 +53,7 @@ export const Registry = () => {
 				<div>
 					<h5>Methods of Remittance</h5>
 					<p>Zelle: tuyue831@gmail.com</p>
-					<a href="https://venmo.com/u/kangli2">Venmo</a>
+					<a href="https://venmo.com/u/kangli2">Venmo: kangli2</a>
 				</div>
 			</div>
 		</div>
