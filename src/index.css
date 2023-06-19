@@ -34,8 +34,8 @@ code {
 }
 
 .thumb {
-  width: 18vw;
-  height: 16vh;
+  max-width: 20vw;
+  max-height: 19vh;
 }
 
 .headerImage {

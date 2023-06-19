@@ -12,7 +12,7 @@ export const Registry = () => {
 				We of course welcome a gift of your own choosing too!
 				</p>
 			</div>
-			<div style={{display: "grid", gridTemplateColumns: "repeat(3, 30vw)", margin:"12px"}}>
+			<div style={{display: "grid", gridTemplateColumns: "repeat(3, 28vw)", margin:"12px"}}>
 				<div>
 					<h5>Treats for Toast</h5>
 					<figure>
@@ -27,7 +27,7 @@ export const Registry = () => {
 					<figure>
 						<img alt="kenya" className={"thumb"} src="https://xesldvbvamzutxnexmdj.supabase.co/storage/v1/object/public/photos/kenya.jpg?t=2023-06-18T01%3A48%3A57.514Z" />
 						<figcaption>
-							<a href="https://kang-chun-cheng.format.com/">My sister</a> lives in Kenya and we have not been able to visit her yet.
+							We want to go see <a href="https://kang-chun-cheng.format.com/">my sister</a> who lives in Kenya.
 						</figcaption>
 					</figure>
 				</div>
