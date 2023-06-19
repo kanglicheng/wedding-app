@@ -12,7 +12,7 @@ export const Registry = () => {
 				We of course welcome a gift of your own choosing too!
 				</p>
 			</div>
-			<div className={"rsvp-container"}>
+			<div className={window.innerWidth > 600 ? "rsvp-container" : "rsvp-device"}>
 				<div>
 					<h5>Treats for Toast</h5>
 					<figure>
@@ -50,7 +50,6 @@ export const Registry = () => {
 						</figcaption>
 					</figure>
 				</div>
-				<div></div>
 				<div>
 					<h5>Methods of Remittance</h5>
 					<p>Zelle: tuyue831@gmail.com</p>

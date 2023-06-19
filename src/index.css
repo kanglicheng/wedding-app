@@ -89,9 +89,10 @@ nav {
   display: grid;
   grid-template-columns: repeat(3, 28vw);
   margin: 12px;
-  @media screen and (max-device-width: 600px) {
-    grid-template-columns: repeat(1, 1fr);
-  }
+}
+
+.rsvp-device {
+  grid-template-columns: repeat(1, 1fr);
 }
 
 input {
