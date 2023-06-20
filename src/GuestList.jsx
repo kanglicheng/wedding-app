@@ -4,6 +4,7 @@ import { supabase } from "./Rsvp";
 export const GuestList = () => {
 
     const [guests, setGuests] = React.useState([]);
+    const [guestCount, setGuestCount] = React.useState(0)
 
     React.useEffect(()=>{
 
@@ -16,7 +17,17 @@ export const GuestList = () => {
             }
             
         }
+
+        const getCount = async () => {
+            const { data, error } = await supabase.rpc('get_guest_count')
+            if(!error){
+               setGuestCount(data);
+            }
+
+        }
+        setGuestCount(1)
         getGuests();
+        getCount()
 
     }, [])
 
@@ -40,6 +51,9 @@ export const GuestList = () => {
                 
             </thead>
             <tbody>
+                <tr>
+                    <td>Current Total: {guestCount}</td>
+                </tr>
                 {guests.map((guest)=>(
                 <tr key={guest.id}>
                     <td>
