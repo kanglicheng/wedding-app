@@ -90,7 +90,7 @@ table, th, td {
 
 .rsvp-container {
   display: grid;
-  grid-template-columns: repeat(3, 28vw);
+  grid-template-columns: repeat(6, 14vw);
   margin: 12px;
 }
 

@@ -11,7 +11,7 @@ export const Home = () => {
 			<div style={{maxWidth: "35em"}}>
 				<p style={{textAlign: "center"}}>
 					Thank you for visiting Yue and Kang-Li&apos;s wedding website. This page contains all the information about our wedding 
-					day. Please <a href={'/rsvp'}>RSVP</a> should you be interested in attending!
+					day. We are working hard to make this a fun and enjoyable event 🎉 so please <a href={'/rsvp'}>RSVP</a> should you be interested in attending!
 				</p>
 			</div>
 			

@@ -7,13 +7,13 @@ export const Registry = () => {
 			<div style={{maxWidth: "35em"}}>
 				<p style={{textAlign: "center"}}>
 				As the saying goes, it&apos;s the thought that counts! We appreciate you being here with us above all else.
-				For the items below, Zelle or Venmo are accepted. We also have an <a href="https://www.amazon.com/wedding/share/yue_kangli_wedding">
-				Amazon registry</a>.
+				For the items below, Zelle or Venmo are accepted. We also have an <strong><a href="https://www.amazon.com/wedding/share/yue_kangli_wedding">
+				Amazon registry</a>. </strong>
 				We of course welcome a gift of your own choosing too!
 				</p>
 			</div>
 			<div className={window.innerWidth > 600 ? "rsvp-container" : "rsvp-device"}>
-				<div>
+				<div style={{gridColumn: "1 / span 2"}}>
 					<h5>Treats for Toast</h5>
 					<figure>
 						<img className={"thumb"} alt="toast" src="https://xesldvbvamzutxnexmdj.supabase.co/storage/v1/object/public/photos/toast.jpeg" />
@@ -22,7 +22,7 @@ export const Registry = () => {
 						</figcaption>
 					</figure>
 				</div>
-				<div>
+				<div style={{gridColumn: "3 / span 2"}}>
 					<h5>Trip to Kenya</h5>
 					<figure>
 						<img alt="kenya" className={"thumb"} src="https://xesldvbvamzutxnexmdj.supabase.co/storage/v1/object/public/photos/kenya.jpg?t=2023-06-18T01%3A48%3A57.514Z" />
@@ -31,7 +31,7 @@ export const Registry = () => {
 						</figcaption>
 					</figure>
 				</div>
-				<div>
+				<div style={{gridColumn: "5 / span 2"}}>
 					<h5>Future Education Fund</h5>
 					<figure>
 						<img className={"thumb"} alt="529" src="https://xesldvbvamzutxnexmdj.supabase.co/storage/v1/object/public/photos/ugift.png?t=2023-06-18T01%3A56%3A13.773Z" />
@@ -41,7 +41,7 @@ export const Registry = () => {
 						</figcaption>
 					</figure>
 				</div>
-				<div>
+				<div style={{gridColumn: "2 / span 2"}}>
 					<h5>House Plants</h5>
 					<figure>
 						<img className={"thumb"} src="https://xesldvbvamzutxnexmdj.supabase.co/storage/v1/object/public/photos/houseplants.png" alt="plants" />
@@ -50,7 +50,7 @@ export const Registry = () => {
 						</figcaption>
 					</figure>
 				</div>
-				<div>
+				<div style={{gridColumn: "4 span 2"}}>
 					<h5>Methods of Remittance</h5>
 					<p>Zelle: tuyue831@gmail.com</p>
 					<a href="https://venmo.com/u/kangli2">Venmo: kangli2</a>
