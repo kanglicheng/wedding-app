@@ -52,7 +52,7 @@ const items = [
 	},
 	{
 		"title": "Sept 2020",
-		"cardTitle": "Second runion!",
+		"cardTitle": "Second reunion!",
 		"media": {
 			"name": "Broadway",
 			"source": {

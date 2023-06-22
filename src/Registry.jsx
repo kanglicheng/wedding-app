@@ -14,7 +14,7 @@ export const Registry = () => {
 			</div>
 			<div className={window.innerWidth > 600 ? "rsvp-container" : "rsvp-device"}>
 				<div style={{gridColumn: "1 / span 2"}}>
-					<h5>Treats for Toast</h5>
+					<h4>Treats for Toast</h4>
 					<figure>
 						<img className={"thumb"} alt="toast" src="https://xesldvbvamzutxnexmdj.supabase.co/storage/v1/object/public/photos/toast.jpeg" />
 						<figcaption>
@@ -23,7 +23,7 @@ export const Registry = () => {
 					</figure>
 				</div>
 				<div style={{gridColumn: "3 / span 2"}}>
-					<h5>Trip to Kenya</h5>
+					<h4>Trip to Kenya</h4>
 					<figure>
 						<img alt="kenya" className={"thumb"} src="https://xesldvbvamzutxnexmdj.supabase.co/storage/v1/object/public/photos/kenya.jpg?t=2023-06-18T01%3A48%3A57.514Z" />
 						<figcaption>
@@ -32,7 +32,7 @@ export const Registry = () => {
 					</figure>
 				</div>
 				<div style={{gridColumn: "5 / span 2"}}>
-					<h5>Future Education Fund</h5>
+					<h4>Future Education Fund <a href={"https://en.wikipedia.org/wiki/529_plan"}>(529)</a></h4>
 					<figure>
 						<img className={"thumb"} alt="529" src="https://xesldvbvamzutxnexmdj.supabase.co/storage/v1/object/public/photos/ugift.png?t=2023-06-18T01%3A56%3A13.773Z" />
 						<figcaption>
@@ -42,7 +42,7 @@ export const Registry = () => {
 					</figure>
 				</div>
 				<div style={{gridColumn: "2 / span 2"}}>
-					<h5>House Plants</h5>
+					<h4>House Plants</h4>
 					<figure>
 						<img className={"thumb"} src="https://xesldvbvamzutxnexmdj.supabase.co/storage/v1/object/public/photos/houseplants.png" alt="plants" />
 						<figcaption>
@@ -51,7 +51,7 @@ export const Registry = () => {
 					</figure>
 				</div>
 				<div style={{gridColumn: "4 span 2"}}>
-					<h5>Methods of Remittance</h5>
+					<h4>Methods of Remittance</h4>
 					<p>Zelle: tuyue831@gmail.com</p>
 					<a href="https://venmo.com/u/kangli2">Venmo: kangli2</a>
 				</div>
