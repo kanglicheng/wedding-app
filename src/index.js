@@ -12,6 +12,7 @@ import { Registry } from './Registry';
 import reportWebVitals from './reportWebVitals';
 import { Reservations } from './Rsvp';
 import { Story } from './Story';
+import { Success } from './Success';
 import { sendToVercelAnalytics } from './vitals';
 
 const router = createBrowserRouter([
@@ -35,6 +36,9 @@ const router = createBrowserRouter([
 			{
 				path: '/eventpics',
 				element: <Pictures/>
+			},{
+				path: '/success',
+				element: <Success/>
 			}
 		],
 	},

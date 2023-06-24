@@ -1,5 +1,6 @@
 import { createClient } from '@supabase/supabase-js';
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import { supabaseUrl } from './constants';
 
 // eslint-disable-next-line no-undef
@@ -19,8 +20,8 @@ const initialResponse = {
 export const Reservations = () => {
 	const [response, setResponse] = React.useState(initialResponse);
 	const [isAttending, setIsAttending] = React.useState(null);
-	const [success, setSuccess] = React.useState(false);
 	const [err, setErr] = React.useState(null);
+	const navigate = useNavigate();
 
 	const onInputChange = (e) => {
 		setResponse({ ...response, [e.target.name]: e.target.value });
@@ -72,13 +73,13 @@ export const Reservations = () => {
 				email: response.email,
 			},
 		]);
-		console.log(data);
-		if (error) {
-			console.log(error);
+		if (!error) {
+			console.log(error, data);
+			alert('An error occurred, please refresh this page and try again')
 		} else {
-			setSuccess(true);
 			setErr(null);
-			setResponse(initialResponse)
+			setResponse(initialResponse);
+			navigate('/success');
 		}
 	};
 
@@ -151,7 +152,6 @@ export const Reservations = () => {
         Submit
 			</button>
 			{err}
-			{success && ' RSVP successful!'}
 		</form>
 		
 		
