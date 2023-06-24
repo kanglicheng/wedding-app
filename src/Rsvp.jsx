@@ -73,7 +73,7 @@ export const Reservations = () => {
 				email: response.email,
 			},
 		]);
-		if (!error) {
+		if (error) {
 			console.log(error, data);
 			alert('An error occurred, please refresh this page and try again')
 		} else {
