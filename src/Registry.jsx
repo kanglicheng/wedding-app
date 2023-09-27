@@ -1,4 +1,6 @@
+import { Line } from 'rc-progress';
 import React from 'react';
+
 
 export const Registry = () => {
 	return (
@@ -14,40 +16,44 @@ export const Registry = () => {
 			</div>
 			<div className={window.innerWidth > 600 ? "rsvp-container" : "rsvp-device"}>
 				<div style={{gridColumn: "1 / span 2"}}>
-					<h4>Treats for Toast</h4>
+					<h4>Treats for Toast ($200)</h4>
 					<figure>
 						<img className={"thumb"} alt="toast" src="https://xesldvbvamzutxnexmdj.supabase.co/storage/v1/object/public/photos/toast.jpeg" />
 						<figcaption>
 							We are always running out of treats for this guy!
 						</figcaption>
+						<Line percent={50} strokeWidth={4} strokeColor="green" />
 					</figure>
 				</div>
 				<div style={{gridColumn: "3 / span 2"}}>
-					<h4>Trip to Kenya</h4>
+					<h4>Trip to Kenya ($2500)</h4>
 					<figure>
 						<img alt="kenya" className={"thumb"} src="https://xesldvbvamzutxnexmdj.supabase.co/storage/v1/object/public/photos/kenya.jpg?t=2023-06-18T01%3A48%3A57.514Z" />
 						<figcaption>
 							We want to go see <a href="https://kang-chun-cheng.format.com/">my sister</a> who lives in Kenya.
 						</figcaption>
+						<Line percent={40} strokeWidth={4} strokeColor="green" />
 					</figure>
 				</div>
 				<div style={{gridColumn: "5 / span 2"}}>
-					<h4>Future Education Fund <a href={"https://en.wikipedia.org/wiki/529_plan"}>(529)</a></h4>
+					<h4>Future Education Fund <a href={"https://en.wikipedia.org/wiki/529_plan"}>(529)</a>($1000)</h4>
 					<figure>
 						<img className={"thumb"} alt="529" src="https://xesldvbvamzutxnexmdj.supabase.co/storage/v1/object/public/photos/ugift.png?t=2023-06-18T01%3A56%3A13.773Z" />
 						<figcaption>
 							We don&apos;t have any yet, but just planning ahead for the future. Please contribute at <a href="https://www.ugift529.com/">Ugift </a> 
 							and use the code <b>95E-J9M</b>.
 						</figcaption>
+						<Line percent={0} strokeWidth={4} strokeColor="green" />
 					</figure>
 				</div>
 				<div style={{gridColumn: "2 / span 2"}}>
-					<h4>House Plants</h4>
+					<h4>House Plants ($300)</h4>
 					<figure>
 						<img className={"thumb"} src="https://xesldvbvamzutxnexmdj.supabase.co/storage/v1/object/public/photos/houseplants.png" alt="plants" />
 						<figcaption>
 							For making apartment life a little better.
 						</figcaption>
+						<Line percent={0} strokeWidth={4} strokeColor="green" />
 					</figure>
 				</div>
 				<div style={{gridColumn: "4 span 2"}}>
