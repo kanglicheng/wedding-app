@@ -22,7 +22,7 @@ export const Registry = () => {
 						<figcaption>
 							We are always running out of treats for this guy!
 						</figcaption>
-						<Line percent={50} strokeWidth={4} strokeColor="green" />
+						<Line percent={100} strokeWidth={4} strokeColor="green" />
 					</figure>
 				</div>
 				<div style={{gridColumn: "3 / span 2"}}>
@@ -32,7 +32,7 @@ export const Registry = () => {
 						<figcaption>
 							We want to go see <a href="https://kang-chun-cheng.format.com/">my sister</a> who lives in Kenya.
 						</figcaption>
-						<Line percent={40} strokeWidth={4} strokeColor="green" />
+						<Line percent={50} strokeWidth={4} strokeColor="green" />
 					</figure>
 				</div>
 				<div style={{gridColumn: "5 / span 2"}}>
@@ -53,7 +53,7 @@ export const Registry = () => {
 						<figcaption>
 							For making apartment life a little better.
 						</figcaption>
-						<Line percent={0} strokeWidth={4} strokeColor="green" />
+						<Line percent={100} strokeWidth={4} strokeColor="green" />
 					</figure>
 				</div>
 				<div style={{gridColumn: "4 span 2"}}>
